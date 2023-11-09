@@ -1,0 +1,721 @@
+:root {
+  --header-background: #191e30;
+  --white: #fff;
+  --hover-orange: #ecb13a;
+  --transparent-background: rgba(252, 250, 247, 0.1);
+  --blue: #137bbc;
+  --green: #008768;
+  --gray: #808080;
+  --card-gray: #fdfdfd;
+  --lightgreen: #00c569;
+  --text-thin: rgba(25, 30, 48, 0.4);
+  --text-normal: rgba(25, 30, 48, 0.6);
+  --element-gray: rgba(25, 30, 48, 0.1);
+  --background-green: rgba(0, 197, 105, 0.1);
+  --background-gray: rgba(202, 205, 193, 0.1);
+
+  --nr-companies-columns: 6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Asap, sans-serif;
+}
+
+.content-max-width {
+  max-width: min(1240px, 100vw);
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--header-background);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+header .itschool-logo {
+  width: 100px;
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+header .navigation .navigation-menu {
+  list-style: none;
+  display: flex;
+}
+
+header .navigation .navigation-menu li {
+  color: var(--white);
+  padding: 10px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navigation .navigation-menu li.active {
+  background-color: var(--transparent-background);
+  border-radius: 20px;
+}
+
+header .navigation .navigation-menu li:not(.active):hover {
+  color: var(--hover-orange);
+}
+
+main .mb-24 {
+  margin-bottom: 24px;
+}
+
+main .mb-48 {
+  margin-bottom: 48px;
+}
+
+main .text-white {
+  color: var(--white);
+}
+
+main .general-info {
+  background-image: url("https://www.itschool.ro/_next/static/media/background-big.6f4ab9bf.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main .general-info .content {
+  padding: 100px 20px 0 20px;
+  display: flex;
+  gap: 30px;
+}
+
+main .general-info .content .information {
+  color: var(--white);
+  width: 50%;
+}
+
+main .general-info .content .information h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 48px;
+  margin-top: 24px;
+}
+
+main .general-info .content .information p {
+  margin-bottom: 24px;
+}
+
+main .general-info .content .information .certi-images {
+  display: flex;
+  gap: 40px;
+}
+
+main .general-info .content .information .certi-images img {
+  height: 36px;
+}
+
+main .general-info .content .information .links-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 72px;
+}
+
+main .link {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  line-height: 1.5;
+  min-width: 114px;
+  text-align: center;
+}
+
+main .link-small {
+  padding: 8px 24px;
+}
+
+main .link-normal {
+  padding: 11px 48px;
+}
+
+main .link-rounded {
+  border-radius: 24px;
+}
+
+main .green-link {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+main .white-link {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+main .simple-link {
+  border-bottom: 2px solid var(--white);
+}
+
+main .link:hover {
+  opacity: 0.8;
+}
+
+main .general-info .content .dude-image {
+  height: 600px;
+  margin-left: auto;
+}
+
+main .cursuri {
+  background: url("https://www.itschool.ro/_next/static/media/background.570f46a1.svg")
+    no-repeat center top;
+  background-size: cover;
+}
+
+main .cursuri .content {
+  padding: 90px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+main .cursuri .content .content-text {
+  margin: 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  color: var(--header-background);
+}
+
+main .content p.subtitle {
+  color: var(--text-thin);
+}
+
+main .content p.large-text {
+  line-height: 1.5;
+}
+
+main .content h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+main .content h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+main .content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+main .cursuri .cards {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+main .cursuri .cards .card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: rgba(25, 30, 48, 0.1) 0px 2rem 4rem 0px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .cursuri .cards .card .icon {
+  position: relative;
+  left: -24px;
+}
+
+main .cursuri .cards .card .label {
+  position: absolute;
+  right: 30px;
+  top: 24px;
+  background-color: var(--background-green);
+  color: var(--lightgreen);
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-weight: 500;
+}
+
+main .cursuri .cards .card h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+main .cursuri .cards .card p.certi {
+  font-size: 14px;
+}
+
+main .content h5 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+main .content .text-center {
+  text-align: center;
+}
+
+main .cursuri .cards .card .arrow {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+main .cursuri .cards .card .arrow:hover {
+  color: var(--green);
+}
+
+main .cursuri .cards-buttons {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+main .cursuri .cards-buttons .button {
+  width: 16px;
+  height: 16px;
+  background-color: var(--gray);
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+main .cursuri .cards-buttons .button.active {
+  width: 48px;
+  background-color: var(--green);
+}
+
+main .cursuri .content .companies-container {
+  margin-top: 50px;
+}
+
+main .cursuri .content .companies-container .companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 50px;
+  margin-top: 50px;
+}
+
+main .cursuri .content .companies-container .companies .img {
+  width: calc(100% / var(--nr-companies-columns) - 20px);
+  text-align: center;
+}
+
+main .technologies .content {
+  padding: 90px 20px;
+  display: flex;
+}
+
+main .technologies .content .left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+main .technologies .content .right-column {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+main .technologies .content .right-column .right-techs {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  row-gap: 30px;
+}
+
+main .technologies .content .right-column .right-techs .tech-list:first-child {
+  min-width: 100%;
+  flex: 1;
+}
+
+main .technologies .content .right-column .girl-image {
+  width: 100%;
+  max-width: 500px;
+  align-self: flex-end;
+}
+
+main .technologies .content .tech-list {
+  margin-bottom: 30px;
+}
+
+main .technologies .content .tech-list h5 {
+  color: var(--header-background);
+}
+
+main .technologies .content .tech-list .tech-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+main .technologies .content .tech-list .tech-images .img-container {
+  width: 64px;
+  height: 64px;
+  box-shadow: rgba(25, 30, 48, 0.05) 0px 10px 10px 0px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .our-values {
+  background-color: var(--background-gray);
+}
+
+main .our-values .content {
+  padding: 90px 20px;
+}
+
+main .our-values .content .about-us {
+  display: flex;
+  gap: 48px;
+  padding-bottom: 50px;
+}
+
+main .our-values .content .about-us .img-container {
+  width: 50%;
+  flex: 1;
+}
+
+main .our-values .content .about-us .img-container .about-us-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+main .our-values .content .about-us .text-information {
+  width: 50%;
+  flex: 1;
+}
+
+main .our-values .content .video {
+  padding: 30px;
+  background-color: var(--background-gray);
+}
+
+main .our-values .content .video .youtube-video {
+  width: 100%;
+  height: 100%;
+  min-height: 620px;
+}
+
+main .our-values .content .values-container h3 {
+  margin: 50px 0;
+}
+
+main .our-values .content .values-container .values {
+  display: flex;
+  column-gap: 80px;
+}
+
+main .our-values .content .values-container .values .value {
+  padding-left: 70px;
+  position: relative;
+}
+
+main .our-values .content .values-container .values .value h4 {
+  margin-bottom: 16px;
+}
+
+main .our-values .content .values-container .values .value::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: var(--element-gray);
+  left: 0;
+  border-radius: 0 30px 30px 0;
+}
+
+main .our-values .content .authorization {
+  margin-top: 90px;
+}
+
+main .our-values .content .authorization .certi-images {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  margin: 48px 0;
+}
+
+main .success-stories {
+  background: url("https://www.itschool.ro/_next/static/media/interview-bg.6bd5d1f4.jpeg")
+    no-repeat center;
+  background-size: cover;
+}
+
+main .success-stories .content {
+  display: flex;
+  padding: 136px 20px;
+  gap: 120px;
+}
+
+main .success-stories .content .left-column {
+  width: 300px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+main .success-stories .content .left-column .link {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+main .success-stories .content .right-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  flex-grow: 1;
+}
+
+main .success-stories .content .right-column .card {
+  padding: 24px 24px 24px 168px;
+  background-color: var(--card-gray);
+  border-radius: 16px;
+  position: relative;
+}
+
+main .success-stories .content .right-column .card .person-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  left: 24px;
+}
+
+main .success-stories .content .right-column .card .info {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--text-normal);
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+main .questions .content {
+  max-width: min(780px, 100vw);
+  padding: 48px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+}
+
+main .questions .content .question {
+  padding: 24px;
+  background-color: var(--card-gray);
+  box-shadow: var(--element-gray) 0px 20px 40px 0px;
+  border-radius: 16px;
+  width: 100%;
+}
+
+main .questions .content .question summary {
+  list-style-type: none;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+main .questions .content .question .arrow {
+  margin-left: auto;
+}
+
+main .questions .content .question .minus-icon,
+main .questions .content .question .up-arrow,
+main .questions .content .question[open] .plus-icon,
+main .questions .content .question[open] .down-arrow {
+  display: none;
+}
+
+main .questions .content .question[open] .minus-icon,
+main .questions .content .question[open] .up-arrow {
+  display: block;
+}
+
+main .questions .content .question p {
+  padding-top: 20px;
+  border-top: 1px solid var(--text-thin);
+  margin-left: 28px;
+  margin-top: 20px;
+  transition: all 0.4s ease-out 0s;
+}
+
+main .questions .content .link {
+  max-width: 160px;
+}
+
+main .newsletter {
+  background: url("https://www.itschool.ro/images/greenish-bg.png") no-repeat
+    center;
+  background-size: cover;
+}
+
+main .newsletter .content {
+  padding: 96px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+  color: var(--white);
+}
+
+main .newsletter .content input {
+  border: none;
+  padding: 11px 116px 11px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: var(--header-background);
+  outline: none;
+}
+
+main .newsletter .content form {
+  position: relative;
+}
+
+main .newsletter .content button {
+  position: absolute;
+  right: -1px;
+  background-color: var(--green);
+  color: var(--white);
+  height: 100%;
+  padding: 0 24px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer .content {
+  padding: 48px 20px;
+  display: flex;
+  gap: 24px;
+}
+
+footer .content .footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+footer .content .footer-column .logo {
+  width: 108px;
+}
+
+footer .content .footer-column .small-title {
+  font-size: 12px;
+  color: var(--text-thin);
+  margin-bottom: 6px;
+}
+
+footer .content .footer-column .social .icons {
+  display: flex;
+  gap: 24px;
+}
+
+footer .content .footer-column .social .social-icon {
+  width: 24px;
+  cursor: pointer;
+}
+
+footer .content .footer-column .links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+footer .content .footer-column .links a {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  color: var(--header-background);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer .content .footer-column .links a:hover {
+  color: var(--green);
+}
+
+.chat {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  background-color: var(--header-background);
+  padding: 10px;
+  border-radius: 30px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  cursor: pointer;
+}
+
+.top-arrow {
+  position: fixed;
+  bottom: 140px;
+  right: 40px;
+  background-color: var(--green);
+  border-radius: 30px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.top-arrow svg path {
+  fill: var(--white);
+}
+
+.top-arrow:hover {
+  opacity: 0.8;
+}
